@@ -10,7 +10,7 @@ public partial class AppShell : Shell
 
         if (DeviceInfo.Idiom == DeviceIdiom.Phone)
         {
-            Shell.Current.CurrentItem = PhoneTabs;
+			CurrentItem = PhoneTabs;
         }
     }
 
