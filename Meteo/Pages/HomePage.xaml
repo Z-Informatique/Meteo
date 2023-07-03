@@ -50,9 +50,22 @@
                                       WidthRequest="200" />
 
                 </FlexLayout>
+
+                <v:CurrentWidget
+                    IsVisible="{OnIdiom Phone=True, Default=False}"/>
+
+                <BoxView HeightRequest="1" />
+
+                <v:Next24HrWidget />
+                <v:Next7DWidget />
+
             </VerticalStackLayout>
         </ScrollView>
-        
+
+
+        <v:WidgetsPanel Grid.Column="{OnIdiom Phone=0, Default=1}"
+                        IsVisible="{OnIdiom Phone=False, Default=True}" />
+
     </Grid>
 
     

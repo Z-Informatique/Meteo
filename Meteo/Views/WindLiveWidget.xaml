@@ -1,11 +1,32 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<VerticalStackLayout xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Meteo.Views.WindLiveWidget">
-    <VerticalStackLayout>
-        <Label 
-            Text="La vue wind"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
-</ContentView>
+
+    <Grid>
+        <Grid.GestureRecognizers>
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+        </Grid.GestureRecognizers>
+
+        <Image VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="200"
+               HeightRequest="200"
+               Source="compass_background.png" />
+
+        <Image x:Name="Needle" 
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               WidthRequest="200"
+               HeightRequest="200"
+               Source="compass_needle.png" />
+
+    </Grid>
+
+    <Label Text="Winds"
+           HorizontalOptions="Center"
+           class="SubContent" />
+    <Label Text="14|25"
+           HorizontalOptions="Center"
+           class="Title" />
+</VerticalStackLayout>

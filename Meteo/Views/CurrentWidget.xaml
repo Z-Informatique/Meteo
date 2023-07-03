@@ -12,4 +12,18 @@
         Text="52°F"
         HorizontalOptions="Center"
         class="Title1"/>
+
+    <Border BackgroundColor="{StaticResource Primary}"
+            Stroke="Transparent"
+            StrokeThickness="1"
+            HorizontalOptions="Center"
+            Padding="15,4">
+        <Border.StrokeShape>
+            <RoundRectangle CornerRadius="60" />
+        </Border.StrokeShape>
+        <Label Text="Effacer"
+               TextColor="{StaticResource White}"
+               HorizontalOptions="Center"
+               FontSize="18"/>
+    </Border>
 </VerticalStackLayout>
