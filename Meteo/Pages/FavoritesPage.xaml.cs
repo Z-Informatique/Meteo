@@ -1,4 +1,3 @@
-using Android.Transitions;
 using Meteo.ViewModels;
 
 namespace Meteo.Pages;
